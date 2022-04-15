@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Janken</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <style>
+      * {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container h3 {
+        margin: 10px 0;
+      }
+
+      .container .choice-btn {
+        margin-top: 30px;
+      }
+
+      .container .choice-btn button {
+        padding: 0.6rem 1rem;
+        border: none;
+        background-color: rgb(92, 226, 92);
+        color: white;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      .container .suit-content {
+        margin: 25px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jankenpon(suit)</h1>
+      <div class="suit-content">
+        <h3>Your choice : <span id="user"></span></h3>
+        <h3>Computer choice : <span id="computer"></span></h3>
+        <h3>Result : <span id="result"></span></h3>
+      </div>
+      <div class="choice-btn">
+        <button>Rock</button>
+        <button>Scissors</button>
+        <button>Papper</button>
+      </div>
+    </div>
+  </body>
+  <script defer src="script.js"></script>
+</html>
